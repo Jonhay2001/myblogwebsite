@@ -1,11 +1,12 @@
-# myblogwebsite
-A simple responsive blog website using HTML5 and CSS3.
 # 📝 Blog Website Project
 
-This project is a responsive blog website built using **HTML5** and **CSS3**.  
-It demonstrates semantic HTML structure, responsive layouts using **Flexbox** and **media queries**, and interactive form and navigation animations.
+A fully responsive **blog website** built with **HTML5** and **CSS3**, featuring semantic structure, responsive layouts, and smooth CSS animations.
+
+👉 **🔗 Live Demo:** [View on GitHub Pages](https://your-username.github.io/blog-website/)
 
 ---
+
+## 📂 Project Structure
 
 
 
