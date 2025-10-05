@@ -7,5 +7,5 @@ It demonstrates semantic HTML structure, responsive layouts using **Flexbox** an
 
 ---
 
-## 📂 Project Structure
+
 
