@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  animation: fadeIn 2s ease-in;
+}
+
+nav {
+  background: #444;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background: #666;
+  border-radius: 4px;
+}
+
+/* Blog Section */
+.blog-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.blog-section article {
+  flex: 1;
+  min-width: 280px;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  animation: fadeIn 1.5s ease-in;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 2rem;
+  background: #fff;
+  margin: 1rem;
+  border-radius: 8px;
+  animation: fadeIn 2s ease-in;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section label {
+  margin-top: 1rem;
+}
+
+.contact-section input,
+.contact-section textarea,
+.contact-section button {
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+  border-color: #007BFF;
+  background-color: #f0f8ff;
+}
+
+.contact-section button {
+  margin-top: 1rem;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-section button:hover {
+  background: #0056b3;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Responsive Layouts with Media Queries */
+@media (max-width: 767px) {
+  /* Phones */
+  .blog-section {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Tablets */
+  .blog-section {
+    flex-direction: row;
+  }
+  .contact-section {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* Desktops */
+  .blog-section {
+    flex-direction: row;
+  }
+  .contact-section {
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
